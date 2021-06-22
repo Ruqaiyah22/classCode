@@ -21,3 +21,7 @@ x = 50
 print(type(x))
 my_first_name = "Ruqaiyah"
 print(type(my_first_name))
+
+#how to comment out multi-line
+"""print("hola")
+print("hola")"""
