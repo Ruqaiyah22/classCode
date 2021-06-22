@@ -19,5 +19,5 @@ car_name = "Tesla"
 print(type(car_name))
 x = 50
 print(type(x))
-my_first_name = "John"
+my_first_name = "Ruqaiyah"
 print(type(my_first_name))
