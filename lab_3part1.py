@@ -1,3 +1,8 @@
+# 
+# PRACTICE WITH DICTIONARIES
+#
+
+print("")
 # Step 2 create a dictionary from given table
 groceryList = {
     "Chicken":"$1.59", 
