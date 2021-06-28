@@ -4,12 +4,13 @@
 
 # # HOW TO CREATE A FUNCTION
 # STEP 1 - 7
-'''def triangleArea(base, height) : # def == define, nameOfTheFunction + initiates a function + adds parameters
-    area = (1/2)(base*height) # creating a variable + storing a value in it
+def triangleArea(base, height) : # def == define, nameOfTheFunction + initiates a function + adds parameters
+    area = 0.5*(base*height) # creating a variable + storing a value in it
     return area # returning the variable
 
+print("This is the pregame example.")
 print(triangleArea(3, 4)) # this argument returns 6, then prints
-print(triangleArea(8, 11)) # this argument returns 11, then prints'''
+print(triangleArea(8, 11)) # this argument returns 11, then prints
 
 # creating a dictionary
 menuPrices = {
@@ -19,9 +20,8 @@ menuPrices = {
 }
 
 # STEP 2 || create a function that adds two menu item prices
-
-
 # what's the significance of including "Dict" + does it have to be that
+# the significance^ 
 def calcPrices(Dict, priceOfChickenSandwich, priceOfFries, priceOfJuice):
     sum = Dict[priceOfChickenSandwich] + Dict[priceOfFries]
     print("")
@@ -42,6 +42,26 @@ def calcPrices(Dict, priceOfChickenSandwich, priceOfFries, priceOfJuice):
     else:
         print("The key does not exist :/")
     print("")
+
+    '''# STEP 2 || LIVE CODING IN CLASS ( unfinished code )
+    food = {
+        "milk" : 1.00,
+        "cheese" : 1.99
+    }
+    total_price = input1 * input2
+
+    goodToGo = True
+    while (goodToGo) :
+        input1 = input("pls give us a food: ")
+        if (input1 in food) :
+            print("thanks")
+        else :
+            goodToGo = False
+        input2 = input("pls give us another food: ")
+        if input2 in food :
+            print("the total price is ", total_price(input1, input2))
+        else:
+            goodToGo = False'''
 
     # STEP 3 || create a function to finds the difference between two menu items
     print("Step 3 || printing out the price difference between two menu items")
@@ -82,7 +102,7 @@ print("")
 
 # creating a function that would update one of the sneakers
 multiplyPriceOfOne = {
-    "yeezy": 24
+    "yeezy": 8*3
 }
 
 # using python built in function to update the dictionary + print
@@ -124,7 +144,7 @@ print("")
 
 # creating a function that would update one of the sneakers
 dividingPriceOfOne = {
-    "sb dunk": 20
+    "sb dunk": 100/5
 }
 
 # using python built in function to update the dictionary + print
@@ -133,6 +153,16 @@ print("Ppl buyin up the SB's. This is the updated inventory. ( SB Dunks are divi
 for i in shoeCount:
     print(i, shoeCount[i])
 print("")
+
+'''# LIVE CODING^ for Step 5 doesn't work w/ my code 
+print("Ppl buyin up the SB's. This is the updated inventory. ( SB Dunks are divided by 5 )")
+def clearanceSale(shoeName, updater) :
+    return (shoeCount[shoeName]/updater)
+print("The new inventory of the SB dunk is " + str(clearanceSale("sb dunk", 5)))
+for i in shoeCount:
+    print(i, shoeCount[i])
+print("")
+# end of live coding'''
 
 # dividing each value in the dictionary
 shoeCount.update((x, y//5) for x, y in shoeCount.items())
@@ -145,8 +175,7 @@ print("")
 print("STRETCH || searching for an unfound argument")
 print("Search up a shoe and we'll let you know if it's available!")
 sneakerSearch = input("Type the shoe name here: ")  # defining the argument
-# making the user input all lowercase since it's case sensitive
-sneakerSearch = sneakerSearch.lower()
+sneakerSearch = sneakerSearch.lower() # making the user input all lowercase since it's case sensitive
 
 if sneakerSearch not in shoeCount:
     print("")
