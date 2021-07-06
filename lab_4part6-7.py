@@ -30,7 +30,7 @@ def largestJerseyNumber(jerseyNumbers) :
             largestJerseyNum = jerseyNumbers[x]['jerseyNum']
             print(jerseyNumbers[x]['jerseyNum'])
         else :
-            largestJerseyNum= jerseyNumbers[x+1]['jerseyNum']
+            largestJerseyNum = jerseyNumbers[x+1]['jerseyNum']
             print(jerseyNumbers[x+1]['jerseyNum'])
     print(largestJerseyNum)
 
